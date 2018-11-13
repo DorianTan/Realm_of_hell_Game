@@ -1,0 +1,249 @@
+fileFormatVersion: 2
+guid: 149735431a4e0dc4b9009325028e2fcb
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: demon_base
+    21300002: demon_action
+    21300004: demon_Illustration
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: demon_base
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 249
+        width: 461
+        height: 748
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92804444ff571a749a0e785c2214f1a5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demon_action
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 44
+        width: 510
+        height: 1090
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c2e0c0c2b75f0041b43326560df8575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demon_Illustration
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 561
+        width: 1230
+        height: 1426
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 439, y: -698}
+        - {x: 551, y: -392}
+        - {x: 615, y: 171}
+        - {x: 615, y: 439}
+        - {x: 467, y: 399}
+        - {x: 294, y: 217}
+        - {x: 284, y: 145}
+        - {x: 224, y: 145}
+        - {x: 468, y: 417}
+        - {x: 557, y: 682}
+        - {x: 202, y: 712}
+        - {x: -161, y: 712}
+        - {x: -189, y: 497}
+        - {x: -199, y: 207}
+        - {x: -180, y: 171}
+        - {x: -262, y: 284}
+        - {x: -304, y: 308}
+        - {x: -311, y: 295}
+        - {x: -311, y: 273}
+        - {x: -217, y: 52}
+        - {x: -194, y: 26}
+        - {x: -123, y: -20}
+        - {x: -247, y: 12}
+        - {x: -257, y: 110}
+        - {x: -304, y: 214}
+        - {x: -606, y: 333}
+        - {x: -610, y: 311}
+        - {x: -601, y: -57}
+        - {x: -295, y: -219}
+        - {x: -194, y: -682}
+        - {x: -161, y: -698}
+        - {x: -101, y: -698}
+        - {x: -97, y: -687}
+        - {x: -68, y: -586}
+        - {x: 201, y: -698}
+      - - {x: 497, y: -169}
+        - {x: 487, y: -177}
+        - {x: 487, y: -190}
+        - {x: 492, y: -190}
+        - {x: 501, y: -183}
+        - {x: 503, y: -179}
+        - {x: 503, y: -170}
+        - {x: 502, y: -169}
+      - - {x: 421, y: -131}
+        - {x: 415, y: -131}
+        - {x: 404, y: -141}
+        - {x: 404, y: -148}
+        - {x: 407, y: -149}
+        - {x: 410, y: -149}
+        - {x: 421, y: -138}
+        - {x: 423, y: -133}
+      - - {x: 164, y: -44}
+        - {x: 232, y: -54}
+        - {x: 214, y: -66}
+        - {x: 191, y: -91}
+      - - {x: -106, y: 555}
+        - {x: -108, y: 553}
+        - {x: -108, y: 550}
+        - {x: -106, y: 548}
+        - {x: -104, y: 548}
+        - {x: -102, y: 550}
+        - {x: -102, y: 553}
+        - {x: -104, y: 555}
+      - - {x: -10, y: 585}
+        - {x: -18, y: 585}
+        - {x: -27, y: 576}
+        - {x: -27, y: 569}
+        - {x: -25, y: 568}
+        - {x: -20, y: 568}
+        - {x: -10, y: 577}
+        - {x: -9, y: 579}
+        - {x: -9, y: 584}
+      - - {x: -34, y: 584}
+        - {x: -40, y: 576}
+        - {x: -40, y: 570}
+        - {x: -33, y: 570}
+        - {x: -30, y: 571}
+        - {x: -27, y: 578}
+        - {x: -27, y: 584}
+      - - {x: -265, y: 605}
+        - {x: -268, y: 603}
+        - {x: -272, y: 585}
+        - {x: -272, y: 583}
+        - {x: -268, y: 579}
+        - {x: -261, y: 579}
+        - {x: -259, y: 584}
+        - {x: -259, y: 605}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 508395712222b134f89193a93de5b90d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 522eec7f5f7d4ac49bbed7e10fd2f46d
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
