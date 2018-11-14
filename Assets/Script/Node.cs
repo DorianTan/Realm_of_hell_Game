@@ -26,7 +26,7 @@ public class Node : MonoBehaviour
         
         if (turret != null)
         {
-            Debug.Log("Tu ne peux pas construir ici! - TODO: Display on screnn. ");
+            Debug.Log("You can not build here! - TODO: Display on screnn. ");
             return;
 
         }
