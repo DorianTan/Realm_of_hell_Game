@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class Shop : MonoBehaviour
 {
+    public TurretBlueprint DemonTurret;
+    public TurretBlueprint GorgonTurret;
+    public TurretBlueprint GoblinTurret;
+
+
     BuildManager buildManager;
 
     void Start()
@@ -11,19 +16,19 @@ public class Shop : MonoBehaviour
         buildManager = BuildManager.instance;
     }
 
-	public void PurchaseDemon()
+	public void SelectDemon()
 	{
 	    Debug.Log("Demon Purchase");
-        buildManager.SetTurretToBuild(buildManager.DemonTurretPrefab);
+        buildManager.SelectTurretToBuild(DemonTurret);
 	}
-    public void PurchaseGorgon()
+    public void SelectGorgon()
     {
         Debug.Log("Gorgon Purchase");
-        buildManager.SetTurretToBuild(buildManager.GorgonTurretPrefab);
+        buildManager.SelectTurretToBuild(GorgonTurret);
     }
-    public void PurchaseGoblin()
+    public void SelectGoblin()
     {
         Debug.Log("Goblin Purchase");
-        buildManager.SetTurretToBuild(buildManager.GoblinTurretPrefab);
+        buildManager.SelectTurretToBuild(GoblinTurret);
     }
 }

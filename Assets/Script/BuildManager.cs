@@ -22,15 +22,27 @@ public class BuildManager : MonoBehaviour
     public GameObject GorgonTurretPrefab;
     public GameObject GoblinTurretPrefab;
 
-    private GameObject turretToBuild;
+    private TurretBlueprint turretToBuild;
 
-    public GameObject GetTurretToBuild()
+    public bool CanBuild
     {
-        return turretToBuild;
+        get { return turretToBuild != null; }
     }
 
+    public void BuildTurretOn(Node node)
+    {
+        if (PlayerStat.Money < turretToBuild.cost)
+        {
+            return;
+        }
 
-    public void SetTurretToBuild(GameObject turret)
+        PlayerStat.Money -= turretToBuild.cost;
+
+
+        GameObject turret =(GameObject)Instantiate(turretToBuild.prefab, node.GetBuildPosition(), Quaternion.identity);
+        node.turret = turret;
+    }
+    public void SelectTurretToBuild(TurretBlueprint turret)
     {
         turretToBuild = turret;
     }

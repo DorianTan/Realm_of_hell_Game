@@ -1,13 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Turret : MonoBehaviour
 {
 
     private Transform target;
 
-    public float range = 2f;
+    public float range;
 
     public string enemyTag = "Enemy";
 
@@ -49,13 +47,13 @@ public class Turret : MonoBehaviour
 	
 	// Update is called once per frame
 	void Update ()
-    { 
-	    transform.up = target.transform.position - transform.position;
-	}
+    {
+        transform.up = target.transform.position - transform.position;
+    }
 
     void OnDrawGizmosSelected()
     {
-        Gizmos.color = Color.red;
+        Gizmos.color = Color.green;
         Gizmos.DrawWireSphere(transform.position,range);
     }
 }
