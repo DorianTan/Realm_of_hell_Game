@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class Shop : MonoBehaviour
 {
-    public TurretBlueprint DemonTurret;
-    public TurretBlueprint GorgonTurret;
-    public TurretBlueprint GoblinTurret;
+    public So_Turret DemonTurret;
+    public So_Turret GorgonTurret;
+    public So_Turret GoblinTurret;
+    public So_Turret SkeletonTurret;
 
 
     BuildManager buildManager;
@@ -30,5 +31,10 @@ public class Shop : MonoBehaviour
     {
         Debug.Log("Goblin Purchase");
         buildManager.SelectTurretToBuild(GoblinTurret);
+    }
+    public void SelectSkeleton()
+    {
+        Debug.Log("Skeleton Purchase");
+        buildManager.SelectTurretToBuild(SkeletonTurret);
     }
 }

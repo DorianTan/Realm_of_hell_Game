@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a97fe03a6e21fba4da994384b99b79d0, type: 3}
+  m_Name: Demon
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 1882325703639088, guid: 10bd5a60fcc25a74689b5c85ab125175, type: 2}
+  cost: 1

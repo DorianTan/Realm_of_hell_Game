@@ -26,6 +26,8 @@ public class WaveSpawner : MonoBehaviour
 
 	    countdown -= Time.deltaTime;
 
+	    countdown = Mathf.Clamp(countdown, 0f, Mathf.Infinity);
+
 	}
 
     IEnumerator SpawnWave()

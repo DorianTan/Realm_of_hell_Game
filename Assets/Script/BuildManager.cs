@@ -21,8 +21,9 @@ public class BuildManager : MonoBehaviour
     public GameObject DemonTurretPrefab;
     public GameObject GorgonTurretPrefab;
     public GameObject GoblinTurretPrefab;
+    public GameObject SkeletonTurretPrefab;
 
-    private TurretBlueprint turretToBuild;
+    private So_Turret turretToBuild;
 
     public bool CanBuild
     {
@@ -45,7 +46,7 @@ public class BuildManager : MonoBehaviour
 
         Debug.Log("Turret Build. Money left"+ PlayerStat.Money);
     }
-    public void SelectTurretToBuild(TurretBlueprint turret)
+    public void SelectTurretToBuild(So_Turret turret)
     {
         turretToBuild = turret;
     }

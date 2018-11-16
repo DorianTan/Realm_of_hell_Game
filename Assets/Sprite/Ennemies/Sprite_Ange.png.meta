@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: 9dd24aaef84c12a4ca8c08949dbb2ba8
+guid: b7ae8478475884f46a302ca3af42388e
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Goblin_action1
-    21300002: Goblin_action2_base
-    21300004: Goblin_action3
-    21300006: Goblin_action4
-    21300008: Goblin_action15
-    21300010: Goblin_Illustration
+    21300000: Angel_base
+    21300002: Angel_1
+    21300004: Angel_Illustration
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -90,13 +87,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Goblin_action1
+      name: Angel_base
       rect:
         serializedVersion: 2
-        x: 1376
-        y: 32
-        width: 449
-        height: 483
+        x: 334
+        y: 856
+        width: 615
+        height: 426
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -104,18 +101,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a6071e915dce814798b6f6f777322c9
+      spriteID: 2aa5e6ffa96d4f348b8c55a053ecde78
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_action2_base
+      name: Angel_1
       rect:
         serializedVersion: 2
-        x: 767
-        y: 111
-        width: 453
+        x: 337
+        y: 382
+        width: 573
         height: 394
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -124,19 +121,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0bc2d2bac41730f4e99670bf16e740f9
+      spriteID: 8eb13af061add2b4ab3870b4b44c79e3
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_action3
+      name: Angel_Illustration
       rect:
         serializedVersion: 2
-        x: 206
-        y: 135
-        width: 446
-        height: 343
+        x: 1090
+        y: 616
+        width: 579
+        height: 1079
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -144,67 +141,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c0586b8618b8e9440a617ba1c50d6e55
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Goblin_action4
-      rect:
-        serializedVersion: 2
-        x: 189
-        y: 601
-        width: 486
-        height: 462
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d9a6c6398c3a12647bd436b1a6c500a5
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Goblin_action15
-      rect:
-        serializedVersion: 2
-        x: 186
-        y: 1124
-        width: 462
-        height: 630
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fbbf9a51fbff6314c9c42b8af15c85d9
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Goblin_Illustration
-      rect:
-        serializedVersion: 2
-        x: 1080
-        y: 580
-        width: 738
-        height: 1391
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 008d49b8cff34424583d867408f3fe40
+      spriteID: b8c54d9e967f71c4eb0513c30a47211e
       vertices: []
       indices: 
       edges: []
@@ -212,7 +149,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: aab803d223ded424384c482dfbf754cd
+    spriteID: f2ca4176ab8b85a40ac1bbb82451b84b
     vertices: []
     indices: 
     edges: []
