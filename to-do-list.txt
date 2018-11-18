@@ -1,3 +1,8 @@
-faire en sorte qu'on voies la range des tours quand la souris passe sur un carré
-trouver une font
-trailrenderer
+display range 
+find font
+trailrender
+live 
+animation/attack
+menu pause
+end
+mobile game
