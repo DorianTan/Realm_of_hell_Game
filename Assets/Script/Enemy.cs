@@ -31,9 +31,9 @@ public class Enemy : MonoBehaviour
 
     void GoNextWayPoint()
     {
-        if (wavepointIndex >= WayPoints.wayPoints.Length - 1)
+        if (wavepointIndex >= WayPoints.wayPoints.Length - 1) //si il arrive au dernier, il se détruit
         {
-            Destroy(gameObject);
+            EndPath();
             return;
 
         }
@@ -41,5 +41,11 @@ public class Enemy : MonoBehaviour
         transform.position = target.position;               //remet l'ennemie sur waypoint pour pas qu'il parte en diagonale
         target = WayPoints.wayPoints[wavepointIndex];
         
+    }
+
+    void EndPath()
+    {
+        PlayerStat.Lives--;
+        Destroy(gameObject);
     }
 }

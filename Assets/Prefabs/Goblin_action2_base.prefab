@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 114891785809644822}
   m_Layer: 0
   m_Name: Goblin_action2_base
-  m_TagString: Untagged
+  m_TagString: turret_HTH
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54,7 +54,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: 1.5
   enemyTag: Enemy
-  offset: 0
+  fireRate: 1
+  ShootPrefab: {fileID: 1864368458140014, guid: 23cfb201105ea3c4bb263c6c81dce624,
+    type: 2}
+  firePoint: {fileID: 0}
 --- !u!212 &212995458563403510
 SpriteRenderer:
   m_ObjectHideFlags: 1

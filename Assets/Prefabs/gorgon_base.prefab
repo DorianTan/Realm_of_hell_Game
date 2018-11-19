@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 114393250414062078}
   m_Layer: 0
   m_Name: gorgon_base
-  m_TagString: Untagged
+  m_TagString: turret_HTH
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54,7 +54,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: 3
   enemyTag: Enemy
-  offset: 0
+  fireRate: 1
+  ShootPrefab: {fileID: 1864368458140014, guid: 23cfb201105ea3c4bb263c6c81dce624,
+    type: 2}
+  firePoint: {fileID: 0}
 --- !u!212 &212218844950738854
 SpriteRenderer:
   m_ObjectHideFlags: 1

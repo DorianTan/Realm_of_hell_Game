@@ -11,7 +11,11 @@ public class Turret : MonoBehaviour
 
     private float angle;
 
-    public float offset;
+    public float fireRate = 1f;
+    private float fireCountdown = 0;
+
+    public GameObject ShootPrefab;
+    public Transform firePoint;
 
     // Use this for initialization
     void Start ()
@@ -49,6 +53,27 @@ public class Turret : MonoBehaviour
 	void Update ()
     {
         transform.up = target.transform.position - transform.position;
+
+        if (this.tag == "turret_Shoot")  //demander diff entre gameobject et this
+        {
+            if (fireCountdown<=0)
+            {
+                Shoot();
+                fireCountdown = 1 / fireRate;
+            }
+            fireCountdown *= Time.deltaTime;
+        }
+    }
+    void Shoot()
+    {
+        Debug.Log("PAN PAN");
+        GameObject bulletChase=(GameObject)Instantiate(ShootPrefab, firePoint.position, firePoint.rotation);
+        Bullet bullet = bulletChase.GetComponent<Bullet>();
+
+        if (bullet != null)
+        {
+            bullet.Chase(target);
+        }
     }
 
     void OnDrawGizmosSelected()

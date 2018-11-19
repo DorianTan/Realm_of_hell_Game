@@ -6,10 +6,14 @@ public class PlayerStat : MonoBehaviour
 {
     [SerializeField]
     private static int money;
+    
+
+    public static int Lives;
 
     [SerializeField] public GameObject moneyCount;
 
     public int startMoney = 400;
+    public int startLives = 20;
     private int moneyPre;
     public static int Money
     {
@@ -25,6 +29,7 @@ public class PlayerStat : MonoBehaviour
 	void Start ()
 	{
 	    Money = startMoney;
+        Lives = startLives;
 	}
 	
 	// Update is called once per frame

@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
+  - turret_HTH
+  - turret_Shoot
   layers:
   - Default
   - TransparentFX
