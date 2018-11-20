@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class WaveSpawner : MonoBehaviour
 {
@@ -13,7 +14,7 @@ public class WaveSpawner : MonoBehaviour
 
     private float countdown = 1f;                   //temps avant le début de la première wave
 
-    private int waveIndex = 0; 
+    private int waveIndex = 0;
 	
 	// Update is called once per frame
 	void Update ()
@@ -33,6 +34,7 @@ public class WaveSpawner : MonoBehaviour
     IEnumerator SpawnWave()
     {
         waveIndex++;
+        PlayerStat.Rounds++;
         for (int i = 0; i < waveIndex; i++)
         {
             SpawnEnemy();

@@ -6,6 +6,8 @@ public class GameManager : MonoBehaviour
 {
     private bool gameEnded = false;
 
+    public GameObject gameOverUI;
+
     // Use this for initialization
     void Start()
     {
@@ -20,6 +22,11 @@ public class GameManager : MonoBehaviour
             return;
         }
 
+        if (Input.GetKeyDown("e"))
+        {
+            EndGame();
+        }
+
         if (PlayerStat.Lives <= 0)
         {
             EndGame();
@@ -29,7 +36,8 @@ public class GameManager : MonoBehaviour
     void EndGame()
     {
         gameEnded = true;
-        Debug.Log("Game Over");
+        gameOverUI.SetActive(true);
+
     }
 
 }

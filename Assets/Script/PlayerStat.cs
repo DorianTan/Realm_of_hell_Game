@@ -12,6 +12,8 @@ public class PlayerStat : MonoBehaviour
 
     [SerializeField] public GameObject moneyCount;
 
+    public static int Rounds;
+
     public int startMoney = 400;
     public int startLives = 20;
     private int moneyPre;
