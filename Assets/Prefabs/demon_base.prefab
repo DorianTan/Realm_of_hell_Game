@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4526312371487250}
   - component: {fileID: 212407538119761630}
   - component: {fileID: 114870277971423466}
+  - component: {fileID: 95397519344615046}
   m_Layer: 8
   m_Name: demon_base
   m_TagString: turret_HTH
@@ -35,12 +36,30 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1882325703639088}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -10.45, y: 1.58, z: 0}
   m_LocalScale: {x: 0.20575799, y: 0.20575799, z: 0.20575799}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &95397519344615046
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1882325703639088}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ae4408a8cccc5334eaf2fc6d7c4a732b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &114870277971423466
 MonoBehaviour:
   m_ObjectHideFlags: 1

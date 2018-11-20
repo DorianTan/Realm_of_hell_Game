@@ -16,12 +16,14 @@ public class Turret : MonoBehaviour
 
     public GameObject ShootPrefab;
     public Transform firePoint;
+    private Animator animator;
 
     // Use this for initialization
     void Start ()
-	{
-	    InvokeRepeating("UpdateTarget",0f,0.5f);	
-	}
+    {
+        InvokeRepeating("UpdateTarget", 0f, 0.5f);
+        animator = GetComponent<Animator>();
+    }
 
     void UpdateTarget() // évitez que ça fasse à chaque frame ça serai trop 
     {
@@ -53,16 +55,22 @@ public class Turret : MonoBehaviour
 	void Update ()
     {
         transform.up = target.transform.position - transform.position;
-
-        if (this.tag == "turret_Shoot")  //demander diff entre gameobject et this
+        
+        if (fireCountdown<=0)
         {
-            if (fireCountdown<=0)
+            if (this.tag == "turret_Shoot")
             {
                 Shoot();
+                animator.SetTrigger("Shoot");
                 fireCountdown = 1 / fireRate;
             }
-            fireCountdown *= Time.deltaTime;
+            if (this.tag == "turret_HTH")
+            {
+                animator.SetTrigger("Hit");
+                fireCountdown = 1 / fireRate;
+            }
         }
+        fireCountdown *= Time.deltaTime;
     }
     void Shoot()
     {
@@ -73,6 +81,7 @@ public class Turret : MonoBehaviour
         if (bullet != null)
         {
             bullet.Chase(target);
+            
         }
     }
 

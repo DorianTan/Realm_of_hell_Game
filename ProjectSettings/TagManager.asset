@@ -7,6 +7,7 @@ TagManager:
   - Enemy
   - turret_HTH
   - turret_Shoot
+  - turret_Gblin
   layers:
   - Default
   - TransparentFX

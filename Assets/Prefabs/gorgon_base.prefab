@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4398256473096588}
   - component: {fileID: 212218844950738854}
   - component: {fileID: 114393250414062078}
+  - component: {fileID: 95722210276277672}
   m_Layer: 0
   m_Name: gorgon_base
   m_TagString: turret_HTH
@@ -35,12 +36,30 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1177910005863282}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.47, y: 0.506, z: 0}
+  m_LocalPosition: {x: -10.85, y: -0.65, z: 0}
   m_LocalScale: {x: 0.199548, y: 0.199548, z: 0.199548}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &95722210276277672
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1177910005863282}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 97490d95fe075cc44a41946114d8da81, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &114393250414062078
 MonoBehaviour:
   m_ObjectHideFlags: 1
