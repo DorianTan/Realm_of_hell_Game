@@ -58,7 +58,7 @@ public class Turret : MonoBehaviour
         
         if (fireCountdown<=0)
         {
-            if (this.tag == "turret_Shoot")
+            if (this.tag == "turret_Shoot")  //demander gameObject et this
             {
                 Shoot();
                 animator.SetTrigger("Shoot");

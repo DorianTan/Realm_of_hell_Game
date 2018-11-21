@@ -36,7 +36,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1474447758543020}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.06, y: 2.61, z: 0}
+  m_LocalPosition: {x: -10.95, y: -0.5, z: 0}
   m_LocalScale: {x: 0.25809598, y: 0.25809598, z: 0.25809598}
   m_Children: []
   m_Father: {fileID: 0}
@@ -71,7 +71,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfa9f194768ef194c8bb0721215286fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 1.5
+  range: 2
   enemyTag: Enemy
   fireRate: 1
   ShootPrefab: {fileID: 1864368458140014, guid: 23cfb201105ea3c4bb263c6c81dce624,

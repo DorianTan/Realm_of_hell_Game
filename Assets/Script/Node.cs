@@ -27,16 +27,16 @@ public class Node : MonoBehaviour
 
     void OnMouseDown()
     {
-
-        if (!buildManager.CanBuild)
-            return;
-        
+ 
         if (turret != null)
         {
-            Debug.Log("You can not build here! - TODO: Display on screnn. ");
+            buildManager.SelectNode(this);
             return;
 
         }
+
+        if (!buildManager.CanBuild)
+            return;
 
         buildManager.BuildTurretOn(this);
     }
