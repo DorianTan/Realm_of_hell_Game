@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Name: Goblin
   m_EditorClassIdentifier: 
   prefab: {fileID: 1474447758543020, guid: 390063cade72a6f468bd6eb8d48028e1, type: 2}
-  cost: 4
+  cost: 40
+  sell: 20

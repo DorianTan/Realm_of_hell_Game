@@ -40,10 +40,10 @@ public class Bullet : MonoBehaviour {
         transform.Translate(dir.normalized * distanceThisFrame,Space.World);
 
     }
-        void HitTarget ()
-        {
+    void HitTarget ()
+    {
         Destroy(target.gameObject);
         Destroy(gameObject);
-        }
+    }
     
 }

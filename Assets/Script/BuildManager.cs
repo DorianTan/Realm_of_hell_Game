@@ -24,8 +24,6 @@ public class BuildManager : MonoBehaviour
     public GameObject SkeletonTurretPrefab;
 
     private So_Turret turretToBuild;
-    private Node selectedNode;
-    public SelectUi selectUI;
 
     public bool CanBuild
     {
@@ -51,14 +49,12 @@ public class BuildManager : MonoBehaviour
 
     public void SelectNode(Node node)
     {
-        selectedNode = node;
         turretToBuild = null;
 
-        selectUI.SetTarget(node);
     }
+
     public void SelectTurretToBuild(So_Turret turret)
     {
         turretToBuild = turret;
-        selectedNode = null;
     }
 }

@@ -9,6 +9,7 @@ public class So_Turret : ScriptableObject
     public GameObject prefab;
 
     public int cost;
+    public int sell;
 	// Use this for initialization
 	void Start () {
 		

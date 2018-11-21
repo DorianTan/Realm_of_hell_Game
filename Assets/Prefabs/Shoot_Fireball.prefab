@@ -9,80 +9,56 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1474447758543020}
+  m_RootGameObject: {fileID: 1670844877148692}
   m_IsPrefabAsset: 1
---- !u!1 &1474447758543020
+--- !u!1 &1670844877148692
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4907865033925286}
-  - component: {fileID: 212995458563403510}
-  - component: {fileID: 114891785809644822}
-  - component: {fileID: 95849959275613078}
+  - component: {fileID: 4229858648988136}
+  - component: {fileID: 212407267825458392}
+  - component: {fileID: 114057978108422052}
   m_Layer: 0
-  m_Name: Goblin_action2_base
-  m_TagString: turret_HTH
+  m_Name: Shoot_Fireball
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4907865033925286
+--- !u!4 &4229858648988136
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1474447758543020}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.11, y: 0, z: 0}
-  m_LocalScale: {x: 0.25809598, y: 0.25809598, z: 0.25809598}
+  m_GameObject: {fileID: 1670844877148692}
+  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: -10.24, y: 2.85, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &95849959275613078
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1474447758543020}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: adb85d843e165a648ad7da6175e38b72, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114891785809644822
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+--- !u!114 &114057978108422052
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1474447758543020}
+  m_GameObject: {fileID: 1670844877148692}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfa9f194768ef194c8bb0721215286fc, type: 3}
+  m_Script: {fileID: 11500000, guid: bc060d98d927ee34ba158ac9b7e0f4c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 2
-  enemyTag: Enemy
-  fireRate: 1
-  ShootPrefab: {fileID: 1864368458140014, guid: 23cfb201105ea3c4bb263c6c81dce624,
-    type: 2}
-  firePoint: {fileID: 0}
---- !u!212 &212995458563403510
+  speed: 10
+--- !u!212 &212407267825458392
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1474447758543020}
+  m_GameObject: {fileID: 1670844877148692}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -112,12 +88,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300002, guid: 9dd24aaef84c12a4ca8c08949dbb2ba8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4847fc8d305eb984ba4c635f369486d9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 4.53, y: 3.94}
+  m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

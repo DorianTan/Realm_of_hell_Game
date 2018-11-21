@@ -1,21 +1,33 @@
 ﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
 {
 
 
     public float speed=10f;
+    public float startHealth = 100;
+    public float health;
     private Transform target;
     private int wavepointIndex = 0;
 
+    public Image healthBar;
 
 
 	// Use this for initialization
 	void Start ()
 	{
-	    target = WayPoints.wayPoints[0];    
+	    target = WayPoints.wayPoints[0];
+        health = startHealth;
 	}
+
+    public void TakeDamage(float amount)
+    {
+        health -= amount;
+
+        healthBar.fillAmount = health/startHealth;
+    }
 	
 	// Update is called once per frame
 	void Update ()

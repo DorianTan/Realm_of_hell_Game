@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Name: Gorgon
   m_EditorClassIdentifier: 
   prefab: {fileID: 1177910005863282, guid: 91f244fe81789d34db0ecc7db503c093, type: 2}
-  cost: 2
+  cost: 20
+  sell: 10

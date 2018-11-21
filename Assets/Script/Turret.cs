@@ -12,7 +12,7 @@ public class Turret : MonoBehaviour
     private float angle;
 
     public float fireRate = 1f;
-    private float fireCountdown = 0;
+    private float fireCountdown = 0f;
 
     public GameObject ShootPrefab;
     public Transform firePoint;
@@ -58,11 +58,11 @@ public class Turret : MonoBehaviour
         
         if (fireCountdown<=0)
         {
-            if (this.tag == "turret_Shoot")  //demander gameObject et this
+            if (this.tag == "turret_Shoot")
             {
                 Shoot();
                 animator.SetTrigger("Shoot");
-                fireCountdown = 1 / fireRate;
+                fireCountdown = 1f / fireRate;
             }
             if (this.tag == "turret_HTH")
             {
@@ -70,7 +70,7 @@ public class Turret : MonoBehaviour
                 fireCountdown = 1 / fireRate;
             }
         }
-        fireCountdown *= Time.deltaTime;
+        fireCountdown -= Time.deltaTime;
     }
     void Shoot()
     {
@@ -80,8 +80,7 @@ public class Turret : MonoBehaviour
 
         if (bullet != null)
         {
-            bullet.Chase(target);
-            
+            bullet.Chase(target);           
         }
     }
 

@@ -36,7 +36,10 @@ public class Node : MonoBehaviour
         }
 
         if (!buildManager.CanBuild)
+        {
             return;
+        }
+           
 
         buildManager.BuildTurretOn(this);
     }

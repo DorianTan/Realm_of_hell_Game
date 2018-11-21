@@ -37,7 +37,6 @@ public class GameManager : MonoBehaviour
     {
         gameEnded = true;
         gameOverUI.SetActive(true);
-
     }
 
 }
