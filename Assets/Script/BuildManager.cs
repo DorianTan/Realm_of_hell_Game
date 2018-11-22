@@ -6,6 +6,7 @@ using UnityEngine;
 public class BuildManager : MonoBehaviour
 {
     public static BuildManager instance;
+    public GameObject _turret;
 
     void Awake()
     {
@@ -42,6 +43,7 @@ public class BuildManager : MonoBehaviour
 
 
         GameObject turret =(GameObject)Instantiate(turretToBuild.prefab, node.GetBuildPosition(), Quaternion.identity);
+        turret.GetComponent<Turret>().SO_Turret = turretToBuild;
         node.turret = turret;
 
         Debug.Log("Turret Build. Money left"+ PlayerStat.Money);
@@ -50,6 +52,7 @@ public class BuildManager : MonoBehaviour
     public void SelectNode(Node node)
     {
         turretToBuild = null;
+        _turret = node.turret;  //pour savoir qu'elle tourelle est selectionner
 
     }
 

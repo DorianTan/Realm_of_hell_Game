@@ -7,7 +7,6 @@ public class PlayerStat : MonoBehaviour
     [SerializeField]
     private static int money;
     
-
     public static int Lives;
 
     [SerializeField] public GameObject moneyCount;

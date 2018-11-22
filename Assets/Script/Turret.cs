@@ -18,6 +18,8 @@ public class Turret : MonoBehaviour
     public Transform firePoint;
     private Animator animator;
 
+    public So_Turret SO_Turret;
+
     // Use this for initialization
     void Start ()
     {
@@ -83,6 +85,8 @@ public class Turret : MonoBehaviour
             bullet.Chase(target);           
         }
     }
+
+
 
     void OnDrawGizmosSelected()
     {
