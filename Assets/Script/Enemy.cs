@@ -27,6 +27,10 @@ public class Enemy : MonoBehaviour
         health -= amount;
 
         healthBar.fillAmount = health/startHealth;
+        if (healthBar.fillAmount <= 0) 
+        {
+            Destroy(gameObject);
+        }
     }
 	
 	// Update is called once per frame
@@ -55,7 +59,7 @@ public class Enemy : MonoBehaviour
         
     }
 
-    void EndPath()
+    void EndPath()  
     {
         PlayerStat.Lives--;
         Destroy(gameObject);

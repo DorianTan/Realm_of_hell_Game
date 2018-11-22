@@ -10,6 +10,7 @@ public class So_Turret : ScriptableObject
 
     public int cost;
     public int sell;
+    public int Damage;
 	// Use this for initialization
 	void Start () {
 		

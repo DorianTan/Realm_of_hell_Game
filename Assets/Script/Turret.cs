@@ -79,6 +79,7 @@ public class Turret : MonoBehaviour
         Debug.Log("PAN PAN");
         GameObject bulletChase=(GameObject)Instantiate(ShootPrefab, firePoint.position, firePoint.rotation);
         Bullet bullet = bulletChase.GetComponent<Bullet>();
+        bullet.damages = SO_Turret.Damage;
 
         if (bullet != null)
         {

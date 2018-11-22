@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,6 +7,7 @@ public class Bullet : MonoBehaviour {
 
     private Transform target;
 
+    public int damages;
 
     public float speed = 70f;
 
@@ -42,8 +44,9 @@ public class Bullet : MonoBehaviour {
     }
     void HitTarget ()
     {
-        Destroy(target.gameObject);
+        target.GetComponent<Enemy>().TakeDamage(damages);
         Destroy(gameObject);
     }
+    
     
 }

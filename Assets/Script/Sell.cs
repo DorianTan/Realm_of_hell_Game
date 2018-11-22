@@ -15,7 +15,7 @@ public class Sell : MonoBehaviour
 
     void DisplaySell()
     {
-        SellText.text = "Sell" + "\n" +"$ s"+ price;
+        SellText.text = "Sell" + "\n" +"$ "+ price;
     }
 
 	// Update is called once per frame

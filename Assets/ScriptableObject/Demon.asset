@@ -14,3 +14,4 @@ MonoBehaviour:
   prefab: {fileID: 1882325703639088, guid: 10bd5a60fcc25a74689b5c85ab125175, type: 2}
   cost: 10
   sell: 5
+  Damage: 75
