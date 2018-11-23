@@ -2,25 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
-public class MainMenu : MonoBehaviour {
+public class MainMenu : MonoBehaviour
+{
 
     public void BtnStart()
     {
-        Debug.Log("Start the game");
+        SceneManager.LoadScene("Scenes/Game");
     }
 
     public void BtnExit()
     {
         Debug.Log("Quit the game");
+        Application.Quit();
     }
-    // Use this for initialization
-    void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
 }

@@ -46,6 +46,8 @@ public class PausedMenu : MonoBehaviour
 
     public void Menu()
     {
-        Debug.Log("Go to Menu");
+        SceneManager.LoadScene("Scenes/MainMenu");
+        PlayerStat.Rounds = 0;
+        Time.timeScale = 1;
     }
 }
