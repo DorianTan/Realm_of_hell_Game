@@ -11,6 +11,7 @@ public class Enemy : MonoBehaviour
     public float health;
     private Transform target;
     private int wavepointIndex = 0;
+    public int EnemyMoney = 20;
 
     public Image healthBar;
 
@@ -29,8 +30,18 @@ public class Enemy : MonoBehaviour
         healthBar.fillAmount = health/startHealth;
         if (healthBar.fillAmount <= 0) 
         {
-            Destroy(gameObject);
+             Die();
         }
+    }
+
+    void Die()
+    {
+        PlayerStat.Money += EnemyMoney;
+
+        WaveSpawner.EnemiesAlives--;
+
+        Destroy(gameObject);
+
     }
 	
 	// Update is called once per frame
@@ -62,6 +73,7 @@ public class Enemy : MonoBehaviour
     void EndPath()  
     {
         PlayerStat.Lives--;
+        WaveSpawner.EnemiesAlives--;
         Destroy(gameObject);
     }
 }

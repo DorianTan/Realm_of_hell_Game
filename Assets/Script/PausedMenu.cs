@@ -42,6 +42,7 @@ public class PausedMenu : MonoBehaviour
         Toggle(); //être sûr que le temps est arrêter
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         PlayerStat.Rounds = 0;
+
     }
 
     public void Menu()

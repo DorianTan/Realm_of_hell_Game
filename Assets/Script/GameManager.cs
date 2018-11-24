@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
     private bool gameEnded = false;
 
     public GameObject gameOverUI;
+    public GameObject winGameUI;
 
     // Use this for initialization
     void Start()
@@ -22,21 +23,36 @@ public class GameManager : MonoBehaviour
             return;
         }
 
-        if (Input.GetKeyDown("e"))
+        if (Input.GetKeyDown("e")||PlayerStat.Lives <= 0 )
         {
-            EndGame();
+            LoseGame();
+        }
+
+        if (Input.GetKeyDown("w"))
+        {
+            WinGame();
         }
 
         if (PlayerStat.Lives <= 0)
         {
-            EndGame();
+            WinGame();
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
         }
     }
 
-    void EndGame()
+    void LoseGame()
     {
         gameEnded = true;
         gameOverUI.SetActive(true);
+    }
+    void WinGame()
+    {
+        gameEnded = true;
+        winGameUI.SetActive(true);
     }
 
 }
