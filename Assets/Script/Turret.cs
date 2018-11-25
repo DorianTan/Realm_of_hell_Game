@@ -60,16 +60,28 @@ public class Turret : MonoBehaviour
         
         if (fireCountdown<=0)
         {
-            if (this.tag == "turret_Shoot")
+            switch (this.tag)
             {
-                Shoot();
-                animator.SetTrigger("Shoot");
-                fireCountdown = 1f / fireRate;
-            }
-            if (this.tag == "turret_HTH")
-            {
-                animator.SetTrigger("Hit");
-                fireCountdown = 1 / fireRate;
+                case "turret_Shoot":      
+                {
+                    Shoot();
+                    animator.SetTrigger("Shoot");
+                    fireCountdown = 1f / fireRate;
+                        break;
+                }
+                case "turret_HTH":
+                {
+                    animator.SetTrigger("Hit");
+                    fireCountdown = 1 / fireRate;
+                    break;
+                }
+                case "turret_Stop":
+                {
+                    animator.SetTrigger("Hit");
+                    fireCountdown = 1 / fireRate;
+                    target.GetComponent<Enemy>().speed = 0;
+                    break;
+                }
             }
         }
         fireCountdown -= Time.deltaTime;

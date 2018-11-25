@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 95722210276277672}
   m_Layer: 0
   m_Name: gorgon_base
-  m_TagString: turret_HTH
+  m_TagString: turret_Stop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -77,6 +77,7 @@ MonoBehaviour:
   ShootPrefab: {fileID: 1864368458140014, guid: 23cfb201105ea3c4bb263c6c81dce624,
     type: 2}
   firePoint: {fileID: 0}
+  SO_Turret: {fileID: 0}
 --- !u!212 &212218844950738854
 SpriteRenderer:
   m_ObjectHideFlags: 1
