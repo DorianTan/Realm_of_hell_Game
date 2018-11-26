@@ -40,7 +40,7 @@ public class PausedMenu : MonoBehaviour
     public void Retry()
     {
         Toggle(); //être sûr que le temps est arrêter
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene("Scenes/Game");
         PlayerStat.Rounds = 0;
 
     }

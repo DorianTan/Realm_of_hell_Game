@@ -15,6 +15,8 @@ public class Turret : MonoBehaviour
     private float fireCountdown = 0f;
 
     public GameObject ShootPrefab;
+    public GameObject HammerPrefab;
+    private Hammer hammer;
     public Transform firePoint;
     private Animator animator;
 
@@ -71,13 +73,16 @@ public class Turret : MonoBehaviour
                 }
                 case "turret_HTH":
                 {
+                    HammerDown();
                     animator.SetTrigger("Hit");
+                    GetComponent<AudioSource>().Play();
                     fireCountdown = 1 / fireRate;
                     break;
                 }
                 case "turret_Stop":
                 {
                     animator.SetTrigger("Hit");
+                    GetComponent<AudioSource>().Play();
                     fireCountdown = 1 / fireRate;
                     target.GetComponent<Enemy>().speed = 0;
                     break;
@@ -86,6 +91,12 @@ public class Turret : MonoBehaviour
         }
         fireCountdown -= Time.deltaTime;
     }
+
+    void HammerDown()
+    {     
+        HammerPrefab.GetComponent<Hammer>().damages = SO_Turret.Damage;
+    }
+
     void Shoot()
     {
         Debug.Log("PAN PAN");

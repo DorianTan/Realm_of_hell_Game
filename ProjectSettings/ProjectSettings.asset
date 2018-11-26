@@ -244,8 +244,8 @@ PlayerSettings:
   AndroidTargetArchitectures: 5
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: C:/Users/dotan/Desktop/Realm_of_hell/Mobile/user.keystore
-  AndroidKeyaliasName: key
+  AndroidKeystoreName: C:/Users/dotan/Desktop/game_build/Mobile/user.keystore
+  AndroidKeyaliasName: 
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 1
   AndroidIsGame: 1

@@ -54,6 +54,18 @@ public class Enemy : MonoBehaviour
         {
             GoNextWayPoint();
         }
+
+	    if (speed == 0)
+	    {
+	        StartCoroutine(Waiting());
+	        
+	    }
+	}
+
+    IEnumerator Waiting()
+    {
+        yield return new WaitForSeconds(2f);
+        speed = 3f;
     }
 
     void GoNextWayPoint()

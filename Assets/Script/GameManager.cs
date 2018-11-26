@@ -28,12 +28,7 @@ public class GameManager : MonoBehaviour
             LoseGame();
         }
 
-        if (Input.GetKeyDown("w"))
-        {
-            WinGame();
-        }
-
-        if (PlayerStat.Lives <= 0)
+        if (Input.GetKeyDown("w")|| PlayerStat.Rounds == 6)
         {
             WinGame();
         }

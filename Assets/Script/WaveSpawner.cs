@@ -46,11 +46,6 @@ public class WaveSpawner : MonoBehaviour
         PlayerStat.Rounds++;
         waveIndex++;
 
-        if (waveIndex==4)
-        {
-            WinGame();
-        }
-
         for (int i = 0; i < waveIndex; i++)
         {
             SpawnEnemy();

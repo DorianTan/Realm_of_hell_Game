@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 114696291991836326}
   - component: {fileID: 61219193836838556}
   - component: {fileID: 95370300498548416}
+  - component: {fileID: 50274185758373660}
   m_Layer: 8
   m_Name: Angel
   m_TagString: Enemy
@@ -96,6 +97,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &50274185758373660
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1112261328907388}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!61 &61219193836838556
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -179,7 +200,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 501550dc94144d14e9ff5cbbc4818d2e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a8e74eace4947ef4f84b7b6e6e7f6bd0, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -214,7 +235,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e746b50441d9d441ba9670f835423be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 2.5
   startHealth: 200
   health: 200
   EnemyMoney: 20

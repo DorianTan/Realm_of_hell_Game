@@ -7,10 +7,11 @@ using TMPro;
 public class Sell : MonoBehaviour
 {
     [SerializeField] private BuildManager buildManager;
-
+    private GameObject turretPre;
     private int price;
-    private int pricePre=0;
+    
     public TextMeshProUGUI SellText;
+
 
 
     void DisplaySell()
@@ -28,10 +29,10 @@ public class Sell : MonoBehaviour
 	    else
 	    {
              price =buildManager._turret.GetComponent<Turret>().SO_Turret.sell;
-	         if (price != pricePre)
+	         if (buildManager._turret!= turretPre)
 	         {
 	             DisplaySell();
-	             pricePre = price;
+	             turretPre = buildManager._turret;
 	         }
 	    }
 

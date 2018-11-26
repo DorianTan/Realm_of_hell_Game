@@ -10,11 +10,10 @@ public class GameOver : MonoBehaviour
 
     public TextMeshProUGUI wavesText;
 
-   // private int waveSurvie = PlayerStat.Rounds - 1;
-
     void OnEnable()
     {
-        wavesText.text="You survive: "+PlayerStat.Rounds.ToString()+" waves";
+        int waveSurvie = PlayerStat.Rounds - 1;
+        wavesText.text="You survived: "+waveSurvie.ToString()+" waves";
     }
 
     public void Retry()
@@ -26,7 +25,6 @@ public class GameOver : MonoBehaviour
     public void Menu()
     {
         SceneManager.LoadScene("Scenes/MainMenu");
-        PlayerStat.Rounds = 0;
-        Time.timeScale = 1;
+        
     }
 }
