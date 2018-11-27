@@ -9,12 +9,6 @@ public class GameManager : MonoBehaviour
     public GameObject gameOverUI;
     public GameObject winGameUI;
 
-    // Use this for initialization
-    void Start()
-    {
-
-    }
-
     // Update is called once per frame
     void Update()
     {
@@ -28,7 +22,7 @@ public class GameManager : MonoBehaviour
             LoseGame();
         }
 
-        if (Input.GetKeyDown("w")|| PlayerStat.Rounds == 6)
+        if (Input.GetKeyDown("w")|| PlayerStat.Rounds == 20)
         {
             WinGame();
         }

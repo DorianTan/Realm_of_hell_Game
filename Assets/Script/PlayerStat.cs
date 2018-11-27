@@ -4,25 +4,22 @@ using UnityEngine;
 
 public class PlayerStat : MonoBehaviour
 {
-    [SerializeField]
-    private static int money;
-    
-    public static int Lives;
-
+    [SerializeField] private static int money;    
     [SerializeField] public GameObject moneyCount;
 
-    public static int Rounds;
+    private int moneyPre;
 
+    public static int Rounds;
+    public static int Lives;
     public int startMoney = 400;
     public int startLives = 20;
-    private int moneyPre;
+    
     public static int Money
     {
         get { return money;}
         set
         {
-            money = value; 
-            
+            money = value;  
         }
     }
 

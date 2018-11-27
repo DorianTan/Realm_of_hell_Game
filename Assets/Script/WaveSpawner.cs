@@ -5,44 +5,30 @@ using UnityEngine.UI;
 
 public class WaveSpawner : MonoBehaviour
 {
-    public static int EnemiesAlives = 0;
-
-    public Transform enemyPrefab;
-
-    public Transform spawnPoint;
-
-    public float timeBetweenWaves = 5f;
-
     private float countdown = 1f;                   //temps avant le début de la première wave
-
     private int waveIndex = 0;
 
+    public Transform enemyPrefab;
+    public Transform spawnPoint;
+    public float timeBetweenWaves = 5f;
     public GameObject winGameUI;
 
     // Update is called once per frame
     void Update ()
 	{
-
-	    if (EnemiesAlives>0)
-	    {
-	        return;
-	    }
-
 	    if (countdown <= 0f)
 	    {
 	        StartCoroutine(SpawnWave());
 	        countdown = timeBetweenWaves;
 	        return;
 	    }
-
 	    countdown -= Time.deltaTime;
-
 	    countdown = Mathf.Clamp(countdown, 0f, Mathf.Infinity);
 	}
 
     IEnumerator SpawnWave()
     {       
-        PlayerStat.Money += waveIndex * 2 + 15;
+        PlayerStat.Money += waveIndex * 10 + 15;
         PlayerStat.Rounds++;
         waveIndex++;
 
@@ -60,6 +46,5 @@ public class WaveSpawner : MonoBehaviour
     void SpawnEnemy()
     {
         Instantiate(enemyPrefab,spawnPoint.position,spawnPoint.rotation);
-        EnemiesAlives++; 
     }
 }

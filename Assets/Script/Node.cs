@@ -5,14 +5,10 @@ using UnityEngine.EventSystems;
 
 public class Node : MonoBehaviour
 {
-    public GameObject turret;
-
-    [Header("Option")]
     BuildManager buildManager;
 
     public Vector3 positionOffset;
-
-    
+    public GameObject turret;
 
 	// Use this for initialization
 	void Start ()
@@ -39,8 +35,6 @@ public class Node : MonoBehaviour
         {
             return;
         }
-           
-
         buildManager.BuildTurretOn(this);
     }
 

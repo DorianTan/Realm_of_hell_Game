@@ -10,10 +10,8 @@ public class BuildManager : MonoBehaviour
 
     void Awake()
     {
-
         if (instance!=null)
         {
-            Debug.LogError("More than one BuildManager in scene!");
             return;
         }
         instance = this;
@@ -38,14 +36,10 @@ public class BuildManager : MonoBehaviour
             Debug.Log("Not enough money to build");
             return;
         }
-
         PlayerStat.Money -= turretToBuild.cost;
-
-
         GameObject turret =(GameObject)Instantiate(turretToBuild.prefab, node.GetBuildPosition(), Quaternion.identity);
         turret.GetComponent<Turret>().SO_Turret = turretToBuild;
         node.turret = turret;
-
         Debug.Log("Turret Build. Money left"+ PlayerStat.Money);
     }
 

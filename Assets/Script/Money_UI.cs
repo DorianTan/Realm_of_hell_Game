@@ -5,8 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class Money_UI : MonoBehaviour
-{
-
+{ 
     public TextMeshProUGUI WalletText;
 	
 	// Update is called once per frame

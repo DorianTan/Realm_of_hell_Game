@@ -6,13 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class PausedMenu : MonoBehaviour
 {
-
     public GameObject ui;
-
-	// Use this for initialization
-	void Start () {
-		
-	}
 	
 	// Update is called once per frame
 	void Update ()
@@ -29,7 +23,7 @@ public class PausedMenu : MonoBehaviour
 
         if (ui.activeSelf)
 	    {
-        Time.timeScale=0f;
+            Time.timeScale=0f;
 	    }
         else
         {
@@ -49,6 +43,5 @@ public class PausedMenu : MonoBehaviour
     {
         SceneManager.LoadScene("Scenes/MainMenu");
         PlayerStat.Rounds = 0;
-        Time.timeScale = 1;
     }
 }

@@ -5,16 +5,14 @@ using UnityEngine.UI;
 public class Enemy : MonoBehaviour
 {
 
+    private Transform target;
+    private int wavepointIndex = 0;
 
     public float speed=10f;
     public float startHealth = 100;
-    public float health;
-    private Transform target;
-    private int wavepointIndex = 0;
-    public int EnemyMoney = 20;
-
+    public float health;   
     public Image healthBar;
-
+    public int EnemyMoney = 20;
 
 	// Use this for initialization
 	void Start ()
@@ -37,11 +35,7 @@ public class Enemy : MonoBehaviour
     void Die()
     {
         PlayerStat.Money += EnemyMoney;
-
-        WaveSpawner.EnemiesAlives--;
-
         Destroy(gameObject);
-
     }
 	
 	// Update is called once per frame
@@ -57,8 +51,7 @@ public class Enemy : MonoBehaviour
 
 	    if (speed == 0)
 	    {
-	        StartCoroutine(Waiting());
-	        
+	        StartCoroutine(Waiting());	        
 	    }
 	}
 
@@ -74,18 +67,15 @@ public class Enemy : MonoBehaviour
         {
             EndPath();
             return;
-
         }
         wavepointIndex++;
         transform.position = target.position;               //remet l'ennemie sur waypoint pour pas qu'il parte en diagonale
-        target = WayPoints.wayPoints[wavepointIndex];
-        
+        target = WayPoints.wayPoints[wavepointIndex];     
     }
 
     void EndPath()  
     {
         PlayerStat.Lives--;
-        WaveSpawner.EnemiesAlives--;
         Destroy(gameObject);
     }
 }

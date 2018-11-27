@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Name: Skeleton
   m_EditorClassIdentifier: 
   prefab: {fileID: 1110081516034826, guid: f41d22a0101d30449b6bda55d3575fc8, type: 2}
-  cost: 30
-  sell: 15
+  cost: 250
+  sell: 125
   Damage: 100

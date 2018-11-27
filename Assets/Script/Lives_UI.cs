@@ -8,12 +8,6 @@ public class Lives_UI : MonoBehaviour {
 
     public TextMeshProUGUI livesText;
 
-
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
 	// Update is called once per frame
 	void Update ()
     {

@@ -8998,7 +8998,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moneyCount: {fileID: 58836403}
   startMoney: 385
-  startLives: 2
+  startLives: 20
 --- !u!114 &815007441
 MonoBehaviour:
   m_ObjectHideFlags: 0

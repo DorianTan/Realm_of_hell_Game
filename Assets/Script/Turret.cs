@@ -3,23 +3,19 @@
 public class Turret : MonoBehaviour
 {
 
-    private Transform target;
-
-    public float range;
-
-    public string enemyTag = "Enemy";
-
-    private float angle;
-
-    public float fireRate = 1f;
-    private float fireCountdown = 0f;
-
-    public GameObject ShootPrefab;
-    public GameObject HammerPrefab;
-    private Hammer hammer;
-    public Transform firePoint;
     private Animator animator;
-
+    private Transform target;
+    private float angle;
+    private float fireCountdown = 0f;
+    private Hammer hammer;
+   
+    
+    public float range;
+    public string enemyTag = "Enemy";
+    public float fireRate = 1f;
+    public GameObject ShootPrefab;
+    public GameObject HammerPrefab; 
+    public Transform firePoint;
     public So_Turret SO_Turret;
 
     // Use this for initialization
@@ -109,8 +105,6 @@ public class Turret : MonoBehaviour
             bullet.Chase(target);           
         }
     }
-
-
 
     void OnDrawGizmosSelected()
     {

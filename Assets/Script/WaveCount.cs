@@ -4,9 +4,11 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class WaveCount : MonoBehaviour {
+public class WaveCount : MonoBehaviour
+{
 
     public TextMeshProUGUI CountWave;
+
 	// Update is called once per frame
 	void Update () {
 
