@@ -35,8 +35,6 @@ public class Sell : MonoBehaviour
 	             turretPre = buildManager._turret;
 	         }
 	    }
-
-	    
     }
 
     public void Destroy()
