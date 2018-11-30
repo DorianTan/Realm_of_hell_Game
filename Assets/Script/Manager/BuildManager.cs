@@ -48,6 +48,7 @@ public class BuildManager : MonoBehaviour
         turretToBuild = null;
         _turret = node.turret;  //pour savoir qu'elle tourelle est selectionner
 
+
     }
 
     public void SelectTurretToBuild(So_Turret turret)
